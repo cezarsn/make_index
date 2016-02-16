@@ -49,7 +49,6 @@ def parse_file(in_file):
     return dict
 
 
-
 def show_results(index_dict):
     """
     Function that print the index
@@ -57,7 +56,7 @@ def show_results(index_dict):
     :param index_dict:
     :return: None
     """
-    for elem in  sorted(index_dict.keys(), key=str.lower):
+    for elem in sorted(index_dict.keys(), key=str.lower):
         print '{}: {}'.format(elem, " ".join(index_dict[elem]))
 
 def main():
@@ -68,5 +67,5 @@ if __name__ == "__main__":
     dict = {}
     if check_args():
         for file in sys.argv[1:]:
-            dict.update(new_parse_file(file))
+            dict.update(parse_file(file))
         show_results(dict)
