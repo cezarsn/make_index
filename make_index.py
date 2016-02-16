@@ -4,7 +4,7 @@ import sys
 
 def check_args():
     """
-
+    Function that check if the files can be found and used
 
     :return:
     """
@@ -19,13 +19,14 @@ def check_args():
     return True
 
 
-def parse_file(in_file):
+def parse_file(in_file, dict):
     """
 
     Function that parse the the file and fill out the dictionary with the appropriate indexes
 
     :param in_file:
-    :return:
+    :param dict:
+    :return: dict
     """
     file_name = os.path.basename(in_file)
 
@@ -37,14 +38,18 @@ def parse_file(in_file):
 
     for line in file_handler:
         elem =  line.split(";")
-        for index in range(1, len(elem)):
-            clean_elem = elem[index].strip().lower()
-            if clean_elem not in dict.keys():
-                list_new = []
-            else:
-                list_new = dict[clean_elem]
-            list_new.append(file_name + '.' + str(elem[0]))
-            dict[clean_elem] = list_new
+        if len(elem) > 1:
+            for index in range(1, len(elem)):
+                clean_elem = elem[index].strip().lower()
+                if clean_elem not in dict.keys():
+                    list_new = []
+                else:
+                    list_new = dict[clean_elem]
+                list_new.append(file_name + '.' + str(elem[0]))
+                dict[clean_elem] = list_new
+        else:
+            print("The file does not have the right format")
+            sys.exit(1)
     file_handler.close()
     return dict
 
@@ -59,13 +64,14 @@ def show_results(index_dict):
     for elem in sorted(index_dict.keys(), key=str.lower):
         print '{}: {}'.format(elem, " ".join(index_dict[elem]))
 
+
 def main():
-    pass
-
-
-if __name__ == "__main__":
     dict = {}
     if check_args():
         for file in sys.argv[1:]:
-            dict.update(parse_file(file))
+            dict.update(parse_file(file, dict))
         show_results(dict)
+
+
+if __name__ == "__main__":
+    main()
