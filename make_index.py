@@ -32,18 +32,18 @@ def parse_file(in_file, dict):
 
     with open(in_file, "r") as file_handler:
         for line in file_handler:
-            elem = line.split(";")
-            if len(elem) > 1:
-                for index in range(1, len(elem)):
-                    clean_elem = elem[index].strip().lower()
-                    if clean_elem not in dict.keys():
-                        list_new = []
+            text = line.split(";")
+            page, tags = file_name + '.' + text[0], text[1:]
+
+            if len(tags) > 0:
+                for tag in tags:
+                    clean_tag = tag.strip().lower()
+                    if clean_tag in dict:
+                        dict[clean_tag] += [page]
                     else:
-                        list_new = dict[clean_elem]
-                    list_new.append(file_name + '.' + str(elem[0]))
-                    dict[clean_elem] = list_new
+                        dict[clean_tag] = [page]
             else:
-                print("The file does not have the right format")
+                print("The file does not have the right format: 'page_number;tag; tag, with subtag\"one or more times'")
                 sys.exit(1)
 
     return dict
