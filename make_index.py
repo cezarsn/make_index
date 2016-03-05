@@ -30,27 +30,22 @@ def parse_file(in_file, dict):
     """
     file_name = os.path.basename(in_file)
 
-    try:
-        file_handler = open(in_file, "r")
-    except IOError as e:
-        print ('Failed to open the file because {}:'.format(e))
-        sys.exit(1)
+    with open(in_file, "r") as file_handler:
+        for line in file_handler:
+            elem = line.split(";")
+            if len(elem) > 1:
+                for index in range(1, len(elem)):
+                    clean_elem = elem[index].strip().lower()
+                    if clean_elem not in dict.keys():
+                        list_new = []
+                    else:
+                        list_new = dict[clean_elem]
+                    list_new.append(file_name + '.' + str(elem[0]))
+                    dict[clean_elem] = list_new
+            else:
+                print("The file does not have the right format")
+                sys.exit(1)
 
-    for line in file_handler:
-        elem =  line.split(";")
-        if len(elem) > 1:
-            for index in range(1, len(elem)):
-                clean_elem = elem[index].strip().lower()
-                if clean_elem not in dict.keys():
-                    list_new = []
-                else:
-                    list_new = dict[clean_elem]
-                list_new.append(file_name + '.' + str(elem[0]))
-                dict[clean_elem] = list_new
-        else:
-            print("The file does not have the right format")
-            sys.exit(1)
-    file_handler.close()
     return dict
 
 
@@ -62,7 +57,7 @@ def show_results(index_dict):
     :return: None
     """
     for elem in sorted(index_dict.keys(), key=str.lower):
-        print '{}: {}'.format(elem, " ".join(index_dict[elem]))
+        print '{}: {}'.format(elem, ", ".join(index_dict[elem]))
 
 
 def main():
