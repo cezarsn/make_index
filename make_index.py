@@ -11,11 +11,11 @@ def check_args():
     if len(sys.argv) == 1:
         print('NOTE: Filenames will be used to create the index reference.\n'
               'Please enter the names of the files to create the index from, separated by spaces: "')
-        sys.exit(1)
+        return False
     for file in sys.argv:
         if not os.path.isfile(file):
             print 'The {} is not a file'.format(file)
-            sys.exit(1)
+            return False
     return True
 
 
@@ -33,7 +33,7 @@ def parse_file(in_file, dict):
     with open(in_file, "r") as file_handler:
         for line in file_handler:
             text = line.split(";")
-            page, tags = file_name + '.' + text[0], text[1:]
+            page, tags = ".".join(file_name, text[0]), text[1:]
 
             if len(tags) > 0:
                 for tag in tags:
@@ -44,7 +44,7 @@ def parse_file(in_file, dict):
                         dict[clean_tag] = [page]
             else:
                 print("The file does not have the right format: 'page_number;tag; tag, with subtag\"one or more times'")
-                sys.exit(1)
+                raise ValueError
 
     return dict
 
@@ -63,10 +63,11 @@ def show_results(index_dict):
 def main():
     dict = {}
     if check_args():
-        for file in sys.argv[1:]:
-            dict.update(parse_file(file, dict))
+        for file_name in sys.argv[1:]:
+            dict.update(parse_file(file_name, dict))
         show_results(dict)
-
+    else:
+        raise IOError
 
 if __name__ == "__main__":
     main()
