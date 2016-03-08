@@ -32,8 +32,8 @@ def parse_file(in_file, dict):
     with open(in_file, "r") as file_handler:
         for line in file_handler:
             text = line.split(";")
-            page, tags = file_name + "." + text[0], text[1:]
-            
+            page, tags = '.'.join([file_name, text[0]]), text[1:]
+
             if len(tags) > 0:
                 for tag in tags:
                     clean_tag = tag.strip().lower()
