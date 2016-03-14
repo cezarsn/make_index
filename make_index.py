@@ -1,5 +1,6 @@
 import os
 import sys
+from collections import defaultdict
 
 
 def check_args():
@@ -37,13 +38,10 @@ def parse_file(in_file, dict):
             if len(tags) > 0:
                 for tag in tags:
                     clean_tag = tag.strip().lower()
-                    if clean_tag in dict:
-                        dict[clean_tag] += [page]
-                    else:
-                        dict[clean_tag] = [page]
+                    dict[clean_tag].append(page)
             else:
-                raise ValueError ("The file does not have the right format: 'page_number;tag; tag, "
-                                                        "with subtag one or more times'")
+                raise ValueError("The file does not have the right format\n {} \n. "
+                                "The line format is: page_number; tag; tag, with subtag one or more times".format(line))
 
     return dict
 
@@ -60,7 +58,7 @@ def show_results(index_dict):
 
 
 def main():
-    dict = {}
+    dict = defaultdict(list)
     if check_args():
         for file_name in sys.argv[1:]:
 
@@ -68,6 +66,6 @@ def main():
         show_results(dict)
 
 
-
 if __name__ == "__main__":
     main()
+
