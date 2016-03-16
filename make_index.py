@@ -54,7 +54,7 @@ def show_results(index_dict):
     :return: None
     """
     for elem in sorted(index_dict.keys(), key=str.lower):
-        print '{}: {}'.format(elem, ", ".join(index_dict[elem]))
+        print('{}: {}'.format(elem, ", ".join(index_dict[elem])))
 
 
 def main():
