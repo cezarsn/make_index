@@ -1,0 +1,26 @@
+4;Mobile Penetration Testing, phases; Mobile Penetration Testing, methodology
+7;Mobile Penetration Testing, scope;Mobile Penetration Testing, components
+11; Wireless Network Scanning;
+12;Wireless Network, passive scanning;Wireless Network, Active scanning 
+13;inSSIDer
+14;Android WiFi Analyzer
+15;IOS 8+ WiFi Scanning; Apple, random MAC Addresses
+16;Cloaked SSID
+17;Monitor Mode Capture;Monitor vs Managed Mode 
+18;Windows Monitor Mode; netmon
+19;OSX Monitor Mode; airport; airport sniff; airport -s
+20;Linux Monitor Mode
+21;iw dev; Linux Monitor Mode
+22;airmon-ng; airmon-ng start; iwconfig mon0 channel 11
+24;VMware and wireless card
+25;kismet 
+26;kismet, initial configuration;kismet SSID Disclosure
+27;Kismet Network Detail
+28;airodump-ng
+29;monitor mode data
+30;the power of the disconnect; deauthenticate packet
+31;aireplay-ng; aireplay-ng --deauth
+49;Wireless Client Network Activity
+50;Preferred Network List;
+51;Network Probe Activity;
+52;Airgraph-ng
