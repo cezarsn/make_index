@@ -9,3 +9,55 @@
 16;android, facebook intent explotation
 17;androidmanifest.xml;android, activy filters
 18;drozer
+19;drozer; drozer, client
+20;drozer; drozer, analysis
+23;drozer; drozer, start empty intent
+24;drozer; drozer, populate intent
+28;androwarn; androwarn, rootsmart-Malware.apk
+38;drozer; drozer, manipulate flitter app
+57;iOS app manipulation;
+58;Cydia Substrate;
+59;Cycript;
+60;Objective-C 101;
+
+
+
+
+
+124;iOS, app binary test;IOS PIE, otool; iOS, stack Canary; iOS, automatic reference counting;
+125;iOS, identify URL Handlers
+127;iOS, examine log messages; ondeviceconsole;
+128;iOS, TLS Certificate Handling;iOS, burp test;
+129;iOS, certificate pinning explanation;
+130;iOS, certificate pinning code example;
+131;iOS, certificate pinning best practice;
+132;iOS, certificate pinning manipulation; sslkillswitch
+133;iOS, certificate pinning testing;
+134;iOS, traffic sniffing; rvictl;
+136;iOS, app jailbreak detection;
+137;iOS, evaluate file system use
+138;iOS, application use file system checksum;
+139;iOS, applicati54on use keychain;
+140;iOS, keychain_dumper; keychain_dumper
+141;iOS, keychain Accessibility attribute; keychain info in backup;iOS keychain wrapper; iOS UYLPasswordManager;
+142;iOS, app how to store password;
+143;iOS, debug detection;iOS, rusticrac, disable debug detection
+144;iOS, detect runtime modification
+149;android, app intent handling
+150;android, invoking activities
+152;android, app loggind; adb logcat;
+153;android, permision evaluation;
+154;android, check sign certificates; openssl;
+155;android, network analyses;
+156;android, app file system use; file;
+157;android, keystore; android keystore api 18;
+158;android, keystore use;
+159;android, debug detection
+
+
+
+
+
+
+
+
