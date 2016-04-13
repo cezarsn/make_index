@@ -1,0 +1,141 @@
+33;iOS, platform specification;iOS, Mach-O;iOS, EULA reverse eng;iOS, file system HFSX;
+34;iOS, boot process; iOS, BrootROM, iOS, Low Level BootLoader; iOS IBoot; iOS Kernel;
+35;iOS, DEP write or execute;
+36;iOS, ASLR;
+37;iOS, Code Signing;iOS, code signing exeption;
+38;iOS, data protection;iOS filesystem encription;iOS data encryprion;
+39;iOS, privilege model;
+40;iOS, Contact Access;
+41;iOS, Phone Number Retrival;
+42;iOS, other privileges;
+43;iOS, updates;
+44;iOS, legacy App IPC;
+46;iOS, Multiple URL Handler Registrants;
+47;iOS, Chrome URL Handler Vulenrability;
+48;iOS, App Extensions;iOS; share/action extensions;iOS Storage Providers;
+49;iOS, Action Extension;
+50;iOS, Action extension security;
+51;iOS, Document Provider Extension;iOS, Document Provider location;iOS, document peaker
+52;iOS, Third-Party Keyboards
+53;iOS, Software Maintenance;
+55;android, general presentation;
+56;android, technical specs;
+57;android, platform releases;
+58;android, operating system security;
+59;android, apps; android, dalvic executable(DEX);android, android virtual env(Zygote);
+60;android, art(ART);android, ahead-of-time(AOT) compilation;
+61;android, accout isolation;android, accounts UUID;
+62;android, application privileges;
+64;android, permision definition;
+65;android, runtime permissions;
+66;android, normal permissions;
+67;android, application signing;
+68;android, exploit mitigation;android, DEP, ASLR;
+69;android, encryption;
+70;android, updates;
+71;android, security fix process;
+72;android, oem software updates;
+73;android, security updates;
+74;android, selinux;android, selinux Mandatory Access Controll
+75;android, selinux enforcement mode;seinfo
+77;android, working with selinux;getenforce;setenforce;
+78;android, selinux restrictions for the OS;
+79;android, new feature in 6. Marshmallow;#
+82;blackbarry, general informations;
+83;blackbarry, technical specification;
+84;blackbarry, apps;
+85;blackbarry, application signing;
+86;blackbarry, native app permission controls;
+87;blackbarry, android runtime perimission controls;
+88;blackbarry, updates;
+90;windows phone, general informations;
+91;windows phone, technical specifications;
+92;windows phone, apps;
+93;windows phone, application sandboxing;
+94;windows phone, application privileges;
+95;windows phone, permission disclosure;
+96;windows phone, application signing;
+97;windows phone, phone encryption;Microsoft Exchange ActiveSync;BitLocker;
+98;windows phone, BitLocker;
+99;windows phone, updates;
+102;mobile device hardware;
+103;emulators vs simulators;
+104;iOS, simulator;
+105;android, emulator;
+106;android, managing avd's;emulator;
+107;android, emulator view;
+108;android, adb;
+109;blackbarry, simulator;
+110;windows phone emulator;
+111;host systems;
+112;developer access;
+122;emulator;
+131;adb shell;
+132;busy-box
+134;adb shell pm list packeges;
+135;adb install;adb uninstall;
+136;adb force-stop; adb shell pm disable; adb shell pm enable; adb shell pm clear;
+137;cat
+138;android, console interaction;adb kill-server;
+139;android, log; adb logcat;
+145;mitigating mobile malware;
+146;mobile malware incentives;
+147;user credential theft;zeus;zitmo;
+148;premium rates;short code SMS;
+149;mobile malware delivery methods;
+150;android malware;
+151;android fake installers;
+152;trojan-sms.androidos.foncy;
+153;foncy permission requirements;
+154;foncy short code delivery;
+155;persistent android malware;
+156;android ransomware: Svpeng;
+157;iOS Malware;
+159;Hacking Team iOS Malware;
+161;Hacking Team iOS Malware, user permission;
+162;Hacking Team iOS Malware, keyboard;
+163;iOS Malware limitation;
+164;mobile malware defense;
+165;third-party app stores;
+166;sideloading, android and blackbarry;MDM policy; wipe, develoaper unloack;
+167;android app verification;
+168;end-user training; purchase blocker;
+171;mitigating the stolen device threat;
+172;activation lock;
+173;loss impact;
+
+
+
+
+
+
+
+
+
+
+
+3;secure mobile deployment;mobile deployment, security steps
+9;mobile, problems;mobile, opportunities
+10;mobile, challenges;mobile, problems;owasp
+11;byod;bring your own device;remote wipe
+12;multi-homed connectivity;connectivity, multi-homed
+13;device management challenges;oha;open handset alliance
+14;sd card;external storage;lost/stolen;mobile, lost/stolen
+15;mobile malware;android, mobile malware;malware, search engine optimization;seo;search engine optimization, mobile malware
+16;sqli;sql injection;xss;csrf;mobile support systems;support systems, mobile
+17;http;https;transport encryption, mobile;mobile, transport encryption omitted
+18;SOP;same origin policy;windows phone, sms flaw;ios, sms flaw
+19;ussd;unstructured supplementary service data;android, ussd
+20;side channel data leakage;twitter, side channel;facebook, side channel
+21;rim, 3 day outage;blackberry, 3 day outage;apple, vendor reliance;rim worldwide network;apple, apns
+22;mobile device, opportunity;mobile device, do it or have unmanaged devices
+23;eap;802.1x;identity management;integrated identity management
+24;application security;application sandboxing
+26;mobile device opportunities
+35;wireshark, follow tcp stream;follow tcp stream
+36;wireshark, red, client;wireshark, red, blue
+40;mobile, policy;policy, practical; policy, enforceable
+41;policy, classes of use;policy, standards
+42;policy, byod;byod, policy
+43;removable media;mobile, removable media;usb, policy;policy, usb
+44;storage encryption;mobile, storage encryption;full disk encryption;mobile device, disk encryption;encryption, forensics;forensics;encryption, downside;full disk encryption, downside
