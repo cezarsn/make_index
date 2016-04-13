@@ -53,6 +53,22 @@
 157;android, keystore; android keystore api 18;
 158;android, keystore use;
 159;android, debug detection
+160;android, object obfuscation;proguard;dexguard;
+161;android, app signature verification; keytool, jarsigner; adb;Android Security Cookbook, Keith Makan
+167;iOS, network analises; rvictl; tcpdump;
+169;Wireshark, filters;Wireshark, frame contains string;
+170;Burp test Scenarion; SSL Certificate Handling;
+175;iAuditor Binary Assurance; 
+176;iAuditor ASL Logging;
+178;cycript;iOS evading Jailbreak Detection;
+179;cycript; tryPrintIvars;
+211;iNalyzer;
+212;Graphviz, Doxygen;
+213;install INalyzer;
+
+
+
+
 
 
 
