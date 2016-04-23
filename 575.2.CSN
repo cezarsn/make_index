@@ -11,42 +11,34 @@
 14;iOS, BigBoss Tools; iOS, SSH server;
 15;iOS 9 Jailbreak; iOS 9, security features;iOS 9, "rootless"
 16;iOS 8.3+ Sandbox Access; iFunBox; Apple File Conduit (AFC);Apple File Conduit (AFC2)
-17;IPA files; IPA Files, installing; iFunBox;Appinst; Filza File Manager 
+17;IPA files; IPA Files, installing; iFunBox;Appinst; Filza File Manager;
 18;android, rooting;
 19;nexus 7;
 20;nexus 7, rooting;adb, fastboot;
 21;android, turn on usb debugging;
 22;nexus 7, accessing over usb; adb, devices;android, "Camera (PTP)" mode;
 23;Nexus Root Tolkit; 
-25;android, TowelRoot 
-26;Android, PingPong Root
+25;android, TowelRoot;
+26;Android, PingPong Root;Samsung KNOX Exploit;	
+27;Windows Unlock;Blackbarry Unlock;
+31;Data storage; NAND Flash;NOR flask;NOR /Applications;
+32;/private; /private/var;/private/var/mobile;/private/var/logs;/private/var/keychains;
+33;iOS files;db files;plist files;.app/ bundle
+34;plist files;/private/var/mobile/Containers/Data/Application/8EB../Library/Safary;SuspenState.plist; SearchDeascriptions.plist;
+35;/private/var/mobile/Containers/Data/Application/GUID;/private/var/mobile/Library;/private/var/mobile/Containers/Bundle;
+36;sqlite files;
+37;interested sqlite files;/private/var/mobile/Library;/private/var/mobile/Library/AddressBook;/private/var/mobile/Library/Calendar;/private/var/mobile/Library/SMS;/private/var/mobile/Library/Voicemail;/private/var/mobile/Library/Safary;/private/var/mobile/Library/Notes;/private/var/mobile/Library/Keyboard;/private/var/wireless/Library/CallHistory;
+38;/private/var/mobile/Library/SMS;iOS, SMS sqlite database;
+39;iOS 8+ Application Files;/private/var/mobile/Containers/Bundles;/private/var/mobile/Containers/Data;/private/var/mobile/Containers/Shared;
+41;iOS, Screen Snapshots;
+42;/private/var/mobile/Library/Voicemail;voicemail.db;iOS, visual voicemail;
+43;iOS, dictinary data;/var/root/Library/Keyboard/dynamic-text.dat/;
+44;adroid, filesystem quick look;/mnt/asec/;mnt/secure/asec;/system;
+45;android, sqlite files; dalvic files;dex files; apk files;
+46;/data/data;shared_prefs directory;android, databases;android, lib directory;
+47;android, databases;
+48;android, application files,apk files;classes.dex; resources.arsc;
+49;android xml files; androidmanifest.xml;user-permissin
+50;/data/misc/wifi/wpa_suplicant.conf/;/data/data/com.android.browser;/data/data/com.android.providers.telephony;/data/data/com.android.providers.userdictionary;user_dict.db;
 
 
-
-
-
-4;iphone, prototype loss;loss;lost;stolen
-5;loss, type;loss, targeted;loss, opportunistic
-6;loss, impact;loss, synchronize;loss, backup;loss, jailbreak;jailbreak, loss
-7;iOS, backup;icloud;iTunes, ~/Library/Application Support/MobileSync/Backup;iTunes, %APPDATA\Apple Computer\MobileSync\Backup
-8;Status.plist;Manifest.plist;Info.plist;Mddata;iOS, backup contents;iOS, backup, encrypted;backup, encrypted, iOS
-9;plist Editor;plutil;plist, file format,Info.plist, contents
-10;mddata;ios, backup files;backup, iOS
-11;sqlitespy;sqlite, view utility
-12;iPhone Backup Extractor;iOS, backup
-13;iPhone Backup Analyzer;IPBA;iOS, backup
-14;iPBA, plugins;iPBA;ios, call history;ios, history data
-15;ipd;backup, blackberry;blackberry, backup;%USERPROFILE%\Documents\Blackberry\Backup;blackberry, backup, CAB file
-16;magic berry;ipd, magic berry;ipd, blackberry format disclosure
-17;blackberry backup extractor;backup, blackberry, tool;blackberry, calendar;blackberry, configuration data;blackberry, use history
-18;windows phone, backup;zune, backup;%LOCALAPPDATA%\Microsoft\Zune, windows phone, backup, no 3rd party data
-19;android, backup;android, backup, mcafee wavesecure;android, backup, mybackup pro;mcafee wavesecure;mybackup pro
-20;passcodes;mdm, passcode
-21;blackberry, passcode, attack;blackberry, removable media
-22;blackberry, device passcode to encrypt media card is vulnerable;device passcode, blackberry, vulnerable;media card, encrypt
-23;blackberry, media card attack;elcomsoft phone password breaker;elcomsoft;eppb;eppb, wordlist attack mode;
-24;ipsw;dfu;iphone data protection tools;iOS, iphone data protection tools;MKBUnlockDevice();redsn0w
-26;iphone data protection tools, 30 minutes 4 digit pin;iOS, pin 30 minutes
-27;swipe;/data/system/gesture.key;swipe, 4-9 dots
-28;android, swipe, sha1;swipe, indexed
-30;GestureKeyLookup.py;GenerateAndroidGestureRainbowTable.py;android, GestureKeyLookup.py;android, GenerateAndroidGestureRainbowTable.py
