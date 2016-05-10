@@ -2,7 +2,7 @@
 5;jailbreaking motivation;administrative access motivation;
 6;jailbreaking legality; 
 7;jailbreaking implications; jaibreaking, warranty implication;
-8;jailbreaking recommedations;jailbreaking, corporate policy implications
+8;jailbreaking recommedations;jailbreaking, corporate policy implications:
 9;jailbreaking, tethered vs untethered
 10;iOS boot process ;iOS signature validation;
 11;iOS, TaiG Jailbreak
@@ -10,35 +10,38 @@
 13;iOS, Cydia App Store; 
 14;iOS, BigBoss Tools; iOS, SSH server;
 15;iOS 9 Jailbreak; iOS 9, security features;iOS 9, "rootless"
-16;iOS 8.3+ Sandbox Access; iFunBox; Apple File Conduit (AFC);Apple File Conduit (AFC2)
-17;IPA files; IPA Files, installing; iFunBox;Appinst; Filza File Manager;
+16;iOS 8.3+ Sandbox Access; iFunBox; Apple File Conduit (AFC);Apple File Conduit (AFC2);ItunesMetadata.plist;iOS, UIFileSharingEnable;
+17;IPA files; IPA Files, installing; iFunBox;appinst; Filza File Manager;
 18;android, rooting;
 19;nexus 7;
 20;nexus 7, rooting;adb, fastboot;
 21;android, turn on usb debugging;
 22;nexus 7, accessing over usb; adb, devices;android, "Camera (PTP)" mode;
-23;Nexus Root Tolkit; 
+23;Nexus Root Tolkit; adb backup -all;
+24;supersu;
 25;android, TowelRoot;
 26;Android, PingPong Root;Samsung KNOX Exploit;	
-27;Windows Unlock;Blackbarry Unlock;
+27;Windows phone, Unlock;Blackbarry Unlock;
 31;Data storage; NAND Flash;NOR flask;NOR /Applications;
 32;/private; /private/var;/private/var/mobile;/private/var/logs;/private/var/keychains;
 33;iOS files;db files;plist files;.app/ bundle
-34;plist files;/private/var/mobile/Containers/Data/Application/8EB../Library/Safary;SuspenState.plist; SearchDeascriptions.plist;
+34;plist files;/private/var/mobile/Containers/Data/Application/8EB../Library/Safary;SuspenState.plist; SearchDeascriptions.plist;MapsSupport.history.plist;
 35;/private/var/mobile/Containers/Data/Application/GUID;/private/var/mobile/Library;/private/var/mobile/Containers/Bundle;
 36;sqlite files;
 37;interested sqlite files;/private/var/mobile/Library;/private/var/mobile/Library/AddressBook;/private/var/mobile/Library/Calendar;/private/var/mobile/Library/SMS;/private/var/mobile/Library/Voicemail;/private/var/mobile/Library/Safary;/private/var/mobile/Library/Notes;/private/var/mobile/Library/Keyboard;/private/var/wireless/Library/CallHistory;
 38;/private/var/mobile/Library/SMS;iOS, SMS sqlite database;
-39;iOS 8+ Application Files;/private/var/mobile/Containers/Bundles;/private/var/mobile/Containers/Data;/private/var/mobile/Containers/Shared;
+39;iOS 8+ Application Files;/private/var/mobile/Containers/Bundles;/private/var/mobile/Containers/Data;/private/var/mobile/Containers/Shared;iOS, sharing extension;
 41;iOS, Screen Snapshots;
 42;/private/var/mobile/Library/Voicemail;voicemail.db;iOS, visual voicemail;
 43;iOS, dictinary data;/var/root/Library/Keyboard/dynamic-text.dat/;
-44;adroid, filesystem quick look;/mnt/asec/;mnt/secure/asec;/system;
+44;adroid, filesystem quick look;/mnt/asec/;mnt/secure/asec;/system;/data;/cache;/mnt/sdcard;
 45;android, sqlite files; dalvic files;dex files; apk files;
 46;/data/data;shared_prefs directory;android, databases;android, lib directory;
 47;android, databases;
 48;android, application files,apk files;classes.dex; resources.arsc;
-49;android xml files; androidmanifest.xml;user-permissin
-50;/data/misc/wifi/wpa_suplicant.conf/;/data/data/com.android.browser;/data/data/com.android.providers.telephony;/data/data/com.android.providers.userdictionary;user_dict.db;
-
-
+49;android xml files;file, androidmanifest.xml;user-permission;
+50;/data/misc/wifi/wpa_suplicant.conf/;/data/data/com.android.browser;/data/data/com.android.providers.telephony;/data/data/com.android.providers.userdictionary;file, user_dict.db;file, contacts2.db(a);file, profile.db(a); file, wpa_suplicant.conf(a);file telephony.db(a);file, mmssms.db(a);file, downloads.db(a);file, calendar.db(a);/data/com.google.android.apps.maps;/data/com.android.quichsearchbox;file, qsb-log.db;/data/system/acciounts.db;file, accounts.db(a);/data/system/users/;
+60;/private/var/mobile/Library/SMS/sms.db;file, sms.db(i);/private/var/mobile/Library/Notes;file, notes.sqlite(i);/private/var/mobile/Media/Recordings;
+file, SuspendState.plist;
+64;/private/var/mobile/Library/caches/snapshot/com.apple.mobilesafari;
+67
