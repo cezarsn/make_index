@@ -1,20 +1,20 @@
 4;Mobile Penetration Testing, phases; Mobile Penetration Testing, methodology
 7;Mobile Penetration Testing, scope;Mobile Penetration Testing, components
 11; Wireless Network Scanning;
-12;Wireless Network, passive scanning;Wireless Network, Active scanning 
-13;inSSIDer
+12;Wireless Network, passive scanning;Wireless Network, Active scanning;Monitor mode capture;
+13;tools, inSSIDer;
 14;Android WiFi Analyzer
-15;IOS 8+ WiFi Scanning; Apple, random MAC Addresses
+15;IOS 8+ WiFi Scanning; Apple, random MAC Addresses;OUI;
 16;Cloaked SSID
-17;Monitor Mode Capture;Monitor vs Managed Mode 
-18;Windows Monitor Mode; netmon
-19;OSX Monitor Mode; airport; airport sniff; airport -s
+17;Monitor Mode Capture;Monitor vs Managed Mode;Ad-hoc mode;Master Mode; 
+18;Windows Monitor Mode; tools, netmon;
+19;OSX Monitor Mode; tools, airport;tools, airport sniff;tools, airport -s
 20;Linux Monitor Mode
 21;iw dev; Linux Monitor Mode
-22;airmon-ng; airmon-ng start; iwconfig mon0 channel 11
+22;tools, airmon-ng; tools, airmon-ng start;tools, iwconfig mon0 channel 11
 24;VMware and wireless card
-25;kismet 
-26;kismet, initial configuration;kismet SSID Disclosure
+25;tools, kismet 
+26;tools, kismet, initial configuration;tools, kismet SSID Disclosure
 27;Kismet Network Detail
 28;airodump-ng
 29;monitor mode data
@@ -23,4 +23,61 @@
 49;Wireless Client Network Activity
 50;Preferred Network List;
 51;Network Probe Activity;
-52;Airgraph-ng
+52;tools, Airgraph-ng; tools, airodump -k; tools airodump -i;
+53;tools airgraph-ng corelations;
+54;clinet probe analyses;
+63;open network attacks;
+64;open network impersonation;
+65;multiple ssid impersonation;tools, karma;tools, karmasploit;
+66;tools, WiFi Pinapple Mark V;
+67;tools, windows ICS(internet connections sharing); tools ncpa.cpl;
+68;tools, pinaple control center;
+69;tools, cain password sniffer;
+73;weak network infrastracture attacks; 
+74;wpa-psk;wpa2-psk;
+75;wpa-psk pmk generation;preshared master key;
+76;wpa-ptk generation;pairwise transient key;mic;message integrity check;
+77;wpa psk key selection attack;
+78;tools, aircrack-ng wpa psk attack;
+79;tools, aircrack-ng user passwords;
+81;tools, pyrit; password attack ofload; 
+82;amazon ec2 cluster gpu host;
+83;/data/misc/wifi/wpa_suplicant.conf;psk;
+95;wpa/wpa2 enterprise mode; extensible autentication protocol(EAP);
+96;enterprise authentication; suplicantm authenticator;authentication server;
+97;protected eap;peap;eap ms-chapv2;
+98;peap authentication;
+100:client certificate validation;
+101;browser certificate validation;
+102;mobile device wlan certificate validation;
+103;tools, freeradius-wpe;
+105;tools, freeradius-wpe attacks; 
+106;tools, freeradius-wpe configuration;
+109;tools, asleap;
+110;wpa enterprise wlan client behaviour iOS;
+111;wpa enterprisewlan client behaviour Android;
+112;wpa enterprisewlan client behaviour windows phone;
+113;wpa enterprisewlan client behaviour blackberry;
+116;mobile device fingerprinting;
+139;network manipulation attacks;
+140;man in the middle attacks;
+141;arp spoofing;
+142;arp spoofing example;tools, apr -a;
+144;tools, cain arp spoofing;mitm full routing;mitm half routing;
+148;cain fraceful exit;
+149;ettercap; tools, ettercap;
+150;tools, ettercap target specification;
+151;tools, ettercap oprion;
+152;tools, ettercap simple usage;
+153;tools, monitoring ettercap;
+154;tools, ethercap graceful exit;
+157:sidejacking attacks;
+158;tools, firesheep;
+160;tools, firesheep and cain;
+162;tools, writing firesheep handelers;
+164;firefox cookie manager;
+192;tools, iw command;
+193;
+
+
+

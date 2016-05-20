@@ -1,9 +1,9 @@
 4;automated app analysis; manual app analysis
 6;automated app analysis, scenarios
-7;snoop-it
-8;snoop-it, install
-11;androwarn;
-12;androwarn, howto
+7;tools, snoop-it
+8;tools, snoop-it, install
+11;tools, androwarn;
+12;tools, androwarn, howto
 14;android, android application messaging
 15;android, intent filtering; android, activity security
 16;android, facebook intent explotation
@@ -19,11 +19,36 @@
 58;Cydia Substrate;
 59;Cycript;
 60;Objective-C 101;
-
-
-
-
-
+61;Ohjective-C vs C++ syntax;
+62;iOS, header analyses;tools, class-dump-z;
+64;tools, cycript;tools, cycript -p; 
+65;tools, cycript accessing objc objects;
+66;tools, cycript objects;
+67;tools, cycript simple app manipulation;
+68;tools, cycrypt explore app classes;ObjectiveC.classe;
+70;tools, cycrypt examine methods;
+71;tools, cycrypt display instance variables;
+72;tools, cycrypt unlock device;
+73;tools, cycrypt completition;
+75;tools, cycrypt pandprma manipulation;method swizzling;
+76;method swizzeling;
+77;method swizzeling wordswithfriends;
+78;method swizzeling isJailbrocken;
+79;cydia substrate and swift;
+80;books, iOS app manipulation;
+81;android, smali;smali
+82;tools, apktool;
+83;dalvik bytecode; android, smali code; smali code;
+84;dalvik bytecode introduction; android, dalvik bitecode;
+85;dalvik bytecode types; android, dalvik bytecode type;
+86;dalvik common instructions; android, dalvik common instruction;
+90;andoid, smali manipulation; tools, apktool b;
+91;andoid, signing apk; tools, keytool.exe;
+92;andoid, signing apk; tools, jarsigner.exe;
+93;tools, adb uninstall; tools, adb install;
+94-99;android, smali code integration; smali code manipulation;
+100;book, android app manipulation;
+122;app report cards;
 124;iOS, app binary test;IOS PIE, otool; iOS, stack Canary; iOS, automatic reference counting;
 125;iOS, identify URL Handlers
 127;iOS, examine log messages; ondeviceconsole;
@@ -35,10 +60,10 @@
 133;iOS, certificate pinning testing;
 134;iOS, traffic sniffing; rvictl;
 136;iOS, app jailbreak detection;
-137;iOS, evaluate file system use
+137;iOS, evaluate file system use; tools, diff-rq;
 138;iOS, application use file system checksum;
 139;iOS, applicati54on use keychain;
-140;iOS, keychain_dumper; keychain_dumper
+140;iOS, keychain_dumper; tools, keychain_dumper;keychain_dumper;
 141;iOS, keychain Accessibility attribute; keychain info in backup;iOS keychain wrapper; iOS UYLPasswordManager;
 142;iOS, app how to store password;
 143;iOS, debug detection;iOS, rusticrac, disable debug detection
@@ -47,7 +72,7 @@
 150;android, invoking activities
 152;android, app loggind; adb logcat;
 153;android, permision evaluation;
-154;android, check sign certificates; openssl;
+154;android, check sign certificates; tools, openssl;tools, openssl pkcs7;
 155;android, network analyses;
 156;android, app file system use; file;
 157;android, keystore; android keystore api 18;
@@ -55,25 +80,18 @@
 159;android, debug detection
 160;android, object obfuscation;proguard;dexguard;
 161;android, app signature verification; keytool, jarsigner; adb;Android Security Cookbook, Keith Makan
-167;iOS, network analises; rvictl; tcpdump;
+167;iOS, network analises;tools, rvictl;tools, tcpdump;
 169;Wireshark, filters;Wireshark, frame contains string;
 170;Burp test Scenarion; SSL Certificate Handling;
-175;iAuditor Binary Assurance; 
+175;iAuditor Binary Assurance; tools, iauditorcli;
 176;iAuditor ASL Logging;
 178;cycript;iOS evading Jailbreak Detection;
 179;cycript; tryPrintIvars;
+189;android, remount; tools, mount -o remount,rw;
+199;andorid, mac-rober; tools, mac-rober;
+205;tools, mactime;
 211;iNalyzer;
 212;Graphviz, Doxygen;
 213;install INalyzer;
-
-
-
-
-
-
-
-
-
-
-
-
+216;android, smali, code;dalvic direct=static; dalvic virtual=protected;
+220;iAuditor;tools, iAuditor;
