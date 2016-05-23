@@ -42,9 +42,9 @@
 84;dalvik bytecode introduction; android, dalvik bitecode;
 85;dalvik bytecode types; android, dalvik bytecode type;
 86;dalvik common instructions; android, dalvik common instruction;
-90;andoid, smali manipulation; tools, apktool b;
-91;andoid, signing apk; tools, keytool.exe;
-92;andoid, signing apk; tools, jarsigner.exe;
+90;android, smali manipulation; tools, apktool b;
+91;android, signing apk; tools, keytool.exe;
+92;android, signing apk; tools, jarsigner.exe;
 93;tools, adb uninstall; tools, adb install;
 94-99;android, smali code integration; smali code manipulation;
 100;book, android app manipulation;
