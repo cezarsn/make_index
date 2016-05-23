@@ -1,0 +1,24 @@
+5;SSL connection validation;
+6;traditional browser cert trust;
+7;mobile device certificate warnings;
+11;tools, ethercap ssl MitM;
+14;tootls, sslstrip;
+22;network traffic manipulation;
+24;tools, iptables;
+44;client side injection attacks;
+47;android, webview client side command injection;
+50;android, addJavaScriptInterface;
+54;webview exploit;
+56;same origin policy, bypass android browser;
+81;HTTP Parameter Tempering;
+112;XSS Attacks;
+117;tools, beef;tools, Browser explotaion framework;
+119;tools, beef data exfiltration;
+120;tools, beef commands;
+121;tools, beef data access;
+128;injectiong SQL content;
+131;tools, sqlmap
+133;tools, sql union statement;
+138;tools, sqlmap os shell; 
+139;WapPushManager sqli;
+140;wappushmanager android;

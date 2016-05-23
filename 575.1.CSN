@@ -44,15 +44,15 @@
 82;blackbarry, general informations;
 83;blackbarry, technical specification;
 84;blackbarry, apps;
-85;blackbarry, application signing;
-86;blackbarry, native app permission controls;
+85;blackbarry, application signing;extension .bar-blackberry;
+86;blackbarry, native app permission controls;config.xml-blackberry;
 87;blackbarry, android runtime perimission controls;
 88;blackbarry, updates;
 90;windows phone, general informations;
 91;windows phone, technical specifications;
 92;windows phone, apps;
 93;windows phone, application sandboxing;
-94;windows phone, application privileges;
+94;windows phone, application privileges;wpappmanifest.xml;
 95;windows phone, permission disclosure;
 96;windows phone, application signing;
 97;windows phone, phone encryption;Microsoft Exchange ActiveSync;BitLocker;
@@ -78,6 +78,7 @@
 137;cat
 138;android, console interaction;adb kill-server;
 139;android, log; adb logcat;
+149;adb logcat -c;adb logcad -d; 
 145;mitigating mobile malware;
 146;mobile malware incentives;
 147;user credential theft;zeus;zitmo;
@@ -101,41 +102,100 @@
 167;android app verification;
 168;end-user training; purchase blocker;
 171;mitigating the stolen device threat;
-172;activation lock;
+172;iOS, activation lock;
 173;loss impact;
-
-
-
-
-
-
-
-
-
-
-
-3;secure mobile deployment;mobile deployment, security steps
-9;mobile, problems;mobile, opportunities
-10;mobile, challenges;mobile, problems;owasp
-11;byod;bring your own device;remote wipe
-12;multi-homed connectivity;connectivity, multi-homed
-13;device management challenges;oha;open handset alliance
-14;sd card;external storage;lost/stolen;mobile, lost/stolen
-15;mobile malware;android, mobile malware;malware, search engine optimization;seo;search engine optimization, mobile malware
-16;sqli;sql injection;xss;csrf;mobile support systems;support systems, mobile
-17;http;https;transport encryption, mobile;mobile, transport encryption omitted
-18;SOP;same origin policy;windows phone, sms flaw;ios, sms flaw
-19;ussd;unstructured supplementary service data;android, ussd
-20;side channel data leakage;twitter, side channel;facebook, side channel
-21;rim, 3 day outage;blackberry, 3 day outage;apple, vendor reliance;rim worldwide network;apple, apns
-22;mobile device, opportunity;mobile device, do it or have unmanaged devices
-23;eap;802.1x;identity management;integrated identity management
-24;application security;application sandboxing
-26;mobile device opportunities
-35;wireshark, follow tcp stream;follow tcp stream
-36;wireshark, red, client;wireshark, red, blue
-40;mobile, policy;policy, practical; policy, enforceable
-41;policy, classes of use;policy, standards
-42;policy, byod;byod, policy
-43;removable media;mobile, removable media;usb, policy;policy, usb
-44;storage encryption;mobile, storage encryption;full disk encryption;mobile device, disk encryption;encryption, forensics;forensics;encryption, downside;full disk encryption, downside
+174;iOS backup;
+175;iOS backup resouces; Status.plist; info.plist;manifest.plist;mddata files;
+176;iOS plist files;
+177;Mddata Files;
+178;SQLSpy;
+179;iPhone Backup Analyzer;
+180;iPhone backup Browser;
+181;blackberry backup;extension, ".bbb";
+182;android, backup;extension, ".ab";
+184;windows, backup;
+185;device passcodes;
+186;iOS, Passcode bypass flows;
+187;iP-Box;
+191;iOS, Touch ID; iOS fingerprint;
+192;iOS, Hacking Touch ID;
+193;iOS, Touch ID implications;
+195;android, swipe-lock;/data/system/gesture.key;
+196;android, gesture hash function;/data/system/gesture.key;
+199;android; pin and passcode;/data/system/password.key;/data/system/locksettings.db;lockscreen.settings_salt;
+202;device passcode recomandation;
+203;iOS, locked device siri access;
+204;locationg lost devices;
+205;MDM GRP History;
+206;Lost devide Reporting;
+240;policy, and practices;
+241;policy, create mobile policies;
+242;policy, device ownership;
+243;policy, removable media cards;
+244;policy, storage encryption;blackberry content protection;
+245;policy, device authentication;anti-hammering;
+247;policy, device passcode selection;
+248;policy, data and device wipe;data vs device wipe;blackberry, selective data wipe;
+249;policy, device disposal;
+250;morotola xoom recall;
+251;enterprise application stores;private enterprise application stores;
+252;per-app vpn; 
+258;MDM, Mobile Device Management;centralized vs distributed sytems;
+259;MDM, advantages;
+260;MDM, ios device management;MDM, iOS with Exchange Active Sync;MDM Apple Push Notification Service (APNS);
+261;MDM, ios "Open in .." extensions rectrictions;MDM, limitation for file sharing.
+262;MDM, ios automatic download;
+263;MDM, iPhone Configuration Utility (iCU);
+265;MDM, .mobileconfig;
+266;MDM, iCU Profile Deployment;MDM, iCU profile user interaction;
+267;MDM, iCU Profile Security;
+268;MDM, iCU profile attaks;
+269;MDM, malicious charger attack;
+271;MDM, Apple APNS Control Model; Apple APNS Control Model;
+272;MDM, APNS requirements; MDM, APNS certificate requirement;
+273;MDM, Enchange and iOS ActiveSync Policy;
+274;MDM, Android Management; MDM, android administration over Exchage;
+275;MDM, Android BIND_DEVICE_ADMIN;MDM, android invalid certificate;
+276;MDM, Google Apps Management;
+277;MDM, Windows Phone;MDM Windows features;
+278;MDM, Blackberry;Blackbarry NOC; Blackbarry BES;
+279;MDM, Blackberry device controls;MDM, Blackberry Bluetooth;
+280;MDM, Container Solution advantages;
+281;MDM, Container Solution disadvantages;
+282;MDM, Container Solution Good Technologies;
+283;MDM, solution differentiators;
+284;MDM, device wipe;
+285;MDM, enterprise device wipe;MDM, MitM Manipulation MobileIron;
+286;MDM, Jailbreak detection;
+287;MDM, Jailbreak evasion;jailbreak evasion xCON;
+288;MDM, device reporting;
+311;iOS, airdrop integration;
+313;iOS, Handoff/Continuity;
+315;iOS, Handoff Operation;iOS, NSUserActivity;
+316;iBeacon;
+317;Apple Pay and NFC;
+318;iOS, Share and Action Sender;
+319;iOS, Share Extension
+320;iOS, other extension;iOS, today extension;
+321;Persona information exfiltration;
+322;MDM, application white listening;
+325;MDM, BYOD implications;
+326;Multihome mobile security implication;
+327;Patching and device Management;
+328;Theft/Loss;
+329;Android Malware; Zeus-Trojan;
+333;Android and USSD Codes;
+334;Side Channel Data Leak;
+335;Increased vendor Reliance;
+336;Safary and iCloud password management;
+337;Android Lollipop (5.0) Features;Smart Lock; Android Lollipop Automatic Encryption;Android Lollipop key storage;Android Lollipop factory reset protection; Android Lollipop PIE and PEX;Android Lollipop intent firewall;
+338;Selinux Policies;
+340;Blackberry Simulator;Blackberry shell access;
+342;Windows Phone emulator apps sideload;
+343;Safary Nitro (Java Script Just in Time) JIT flow;
+344;Instastock app;
+347;Prototype data lost;
+348;iPhone data protection tool;
+351;iOS Ikee Worm;
+352;Blackberry Malware;
+353;Windows Malware;
